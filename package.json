@@ -1,0 +1,23 @@
+{
+  "name": "pug-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panechek/pug-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/panechek/pug-practice/issues"
+  },
+  "homepage": "https://github.com/panechek/pug-practice#readme",
+  "dependencies": {
+    "jstransformer-markdown-it": "^3.0.0",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
