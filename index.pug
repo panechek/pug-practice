@@ -1,13 +1,7 @@
+- const title = 'main';
 doctype html
 html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Pug-maket
-        link(rel='stylesheet' href='./style/app/css')
-        style 
-            include styles/basis.css
+    include includes/head.pug
     body 
         include includes/header.pug
         main
@@ -27,5 +21,7 @@ html(lang="en")
                 1. **Теория**. Короткая лекция в виде текста или видео. Она основана на задаче, так что в отличие от традиционной академической теории, мы делаем упор на специфическую задачу, которая уже решена умными инженерами и программистами, а затем следуем по их шагам, чтобы понять решение.
                 2. **Тест**. Проверка вашего понимания. Нам не важно запоминание фактов, поэтому вопросы теста нацелены на понимание концепции, а не на тренировку памяти.
                 3. **Практика**. Упражнения по программированию в реальной среде разработки, доступны через браузер. Не в виде симуляции, не в виде игрушки, а на настоящей машине с базами данных, фреймворками, серверами и другими инструментами.
+        include includes/list.pug
+        include includes/welcome.pug
         include includes/footer.pug
 

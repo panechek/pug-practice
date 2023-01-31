@@ -1,0 +1,22 @@
+- const isLogin = true;
+- 
+    const user = {
+        name: 'Mark',
+        surname: 'Brown',
+        login: 'maki',
+    };
+
+.container 
+    .row 
+        .col 
+            if isLogin 
+                section.profile 
+                    h1 Добро пожаловать!
+                    section.user-profile 
+                        p.name 
+                                if user.name && user.surname
+                                    | #{user.name} #{user.surname}
+
+            else 
+                section.registration 
+                    h1 Зарегистрируйтесь!                   

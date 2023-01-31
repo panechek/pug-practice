@@ -1,0 +1,19 @@
+-
+  const titles = {
+    main: "Домашняя страница",
+    product: "Наши продукты",
+  }
+
+head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        if title == 'main'
+            title= titles.main
+        else if title == 'products'
+            title= titles.products 
+        else 
+            title OOOPs
+        link(rel='stylesheet' href='./style/app/css')
+        style 
+            include ../styles/basis.css
