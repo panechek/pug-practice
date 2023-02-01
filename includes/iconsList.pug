@@ -22,9 +22,12 @@
         ]
     };
 
+mixin buttonLook(name = 'Картинку')
+    button.btn.btn-order= 'Посмотреть ' + name
 each pics, accesses in icons 
     h2= accesses 
     ul 
         each icon in pics 
             li
                 a(href=icon.url)= icon.name
+                +buttonLook(icon.name)
