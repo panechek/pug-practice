@@ -1,0 +1,30 @@
+-
+    const icons = {
+        free: [
+            {
+                name: 'robot',
+                 url: './icons/robot.svg',
+            },
+            {
+                name: 'car',
+                url: './icons/car.svg',
+            }
+        ],
+        premium: [
+            {
+                name: 'cat',
+                url: './icons/cat.svg',
+            },
+            {
+                name: 'dog',
+                url: './icons/dog.svg',
+            }
+        ]
+    };
+
+each pics, accesses in icons 
+    h2= accesses 
+    ul 
+        each icon in pics 
+            li
+                a(href=icon.url)= icon.name

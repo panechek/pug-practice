@@ -1,0 +1,25 @@
+-
+    const usersList = {
+        admin: [
+            {
+                name: 'John',
+                surname: 'Pink',
+            },
+        ],
+        moderator: [
+            {
+                name: 'Jonathan',
+                surname: 'Green',
+            },
+            {
+                name: 'Max',
+                surname: 'Blue',
+            },
+        ],
+    }
+
+each people, position in usersList 
+    h2= position 
+    ul 
+        each user in people 
+            li= user.name + '' + user.surname

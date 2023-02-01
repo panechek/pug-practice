@@ -1,0 +1,38 @@
+-
+    const users = [
+        {
+            name: 'Bob',
+            surname: 'White',
+            login: 'bbobb',
+            scores: 1122,
+        },
+        {
+            name: 'Bill',
+            username: 'Black',
+            login: 'billy',
+            scores: 2311,
+        },
+    ];
+
+- const us = [];
+
+section.container
+    h2 Рейтинг пользователей
+
+    table 
+        thead 
+            tr 
+                th Имя
+                th Фамилия
+                th Логин
+                th Баллы
+        tbody 
+            each user in users
+                tr 
+                    td= user.name
+                    td= user.surname
+                    td= user.login
+                    td= user.scores
+            else 
+                tr 
+                td(colspan='4') Нет пользователей
